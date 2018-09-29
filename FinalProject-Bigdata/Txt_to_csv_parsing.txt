@@ -1,0 +1,4 @@
+Command to parse our txt output to a csv output of the format we desire:
+cat 3.0.txt | tr -s '[:blank:]' ',' | tr -d '[]' > test3.csv
+more generally:
+cat <input_filename>.txt | tr -s '[:blank:]' ',' | tr -d '[]' > <output_filename>.csv
